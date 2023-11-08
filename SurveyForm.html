@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Preferences Survey Form</h1>
+    <p id="description">Please complete the form with your work preferences</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name:
+          <input id="name" type="text" required placeholder="Your name here"
+        /></label>
+        <label id="email-label" for="email"
+          >Email:
+          <input id="email" type="email" required placeholder="Your email here"
+        /></label>
+        <label id="number-label" for="number"
+          >Preferred number of hours per week (optional)<input
+            id="number"
+            type="number"
+            min="20"
+            max="40"
+            placeholder="Number of hours here"
+        /></label>
+        <label for="dropdown"
+          >Which day of the week would you prefer to have off?
+          <select id="dropdown">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which shift would you prefer: AM, Mid-shift, or PM?</legend>
+        <label class="block" for="shift-label">
+          <input type="radio" name="shift-label" id="shift-label" value="AM" />
+          AM
+        </label>
+        <label class="block" for="shift-label">
+          <input
+            type="radio"
+            name="shift-label"
+            id="shift-label"
+            value="Mid-shift"
+          />
+          Mid-shift
+        </label>
+        <label class="block" for="shift-label">
+          <input type="radio" name="shift-label" id="shift-label" value="PM" />
+          PM
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Which holidays would you like to work? (select at least two)
+        </legend>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="New Years"
+          />
+          New Years
+        </label>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="Memorial Day"
+          />
+          Memorial Day
+        </label>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="Fourth of July"
+          />
+          Fourth of July
+        </label>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="Labor Day"
+          />
+          Labor Day
+        </label>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="Thanksgiving"
+          />
+          Thanksgiving
+        </label>
+        <label class="block" for="holiday"
+          ><input
+            id="holiday"
+            name="holiday"
+            type="checkbox"
+            value="Christmas"
+          />
+          Christmas
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Please add any additional preferences or comments<textarea
+            rows="5"
+          ></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
